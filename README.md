@@ -1,6 +1,8 @@
 # Dnevnici-po-ZDDS
 Lutris yaml file for installing NRA's Dnevnici po ZDDS
 
+The version of Dnevnici-po-ZDDS build into the code is v1301 
+
 In order to install Dnevnici po ZDDS, you must install Lutris on you distro.
 After that, just download/clone the repo/file and in Lutris:
 1. Go to Add Game ( + sign in top left ) 
