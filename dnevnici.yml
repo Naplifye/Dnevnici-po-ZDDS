@@ -1,0 +1,50 @@
+name: Dnevnici
+game_slug: dnevnici
+runner: wine
+slug: Inst_DnevZDDS_v1301
+version: Inst_DnevZDDS_v1301
+year: 2024
+script:
+  game:
+    arch: win32
+    exe: drive_c/Program Files/NRA/Deklaration/ZDDS/Dnevnici.exe
+    prefix: $GAMEDIR
+    working_dir: $GAMEDIR
+  wine:
+    version: lutris-7.2-2-x86_64
+  system: 
+    env:
+       LANG: "bg_BG.UTF-8"
+       LC_NUMERIC: "en_US.UTF-8" # For decimal point usage 
+  files: 
+  - installer: "N/A:Select the setup file"
+  installer:
+    - task:
+        arch: win32
+        description: Creating 32-bit Wine prefix and installing required components.
+        name: create_prefix
+        prefix: $GAMEDIR
+    - task:
+        description: Install Dnevnici
+        name: wineexec
+        args: /S /v/qn
+        executable: installer
+        prefix: $GAMEDIR
+    - task:
+        app: jet40
+        arch: win32
+        description: Install jet40 with winetricks
+        name: winetricks
+        prefix: $GAMEDIR
+    - task:
+        app: corefonts
+        arch: win32
+        description: Install MS Core-Fonts with winetricks
+        name: winetricks
+        prefix: $GAMEDIR
+    - task:
+        app: win10
+        arch: win32
+        description: Setting Wine to Windows 10 32-Bit
+        name: winetricks
+        prefix: $GAMEDIR
