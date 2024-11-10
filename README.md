@@ -21,3 +21,13 @@ git clone https://github.com/Naplifye/Dnevnici-po-ZDDS.git
 - This script uses the lutris-7.2-2-x86_64 wine version
 - The script is also compatible with the latest stable/staging wine versions. 
 - You can change the wine version in Lutris, if needed.
+
+# Issues
+```
+## Problem 
+```
+On older versions of Lutris, you may experience issues where the script cannot be installed because the required Wine version is either not found or mismatched with wine-ge-8-26
+```
+## Solution
+```
+To resolve this, install the latest version of Lutris, such as through Flatpak, to ensure compatibility.
