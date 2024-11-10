@@ -19,5 +19,5 @@ git clone https://github.com/Naplifye/Dnevnici-po-ZDDS.git
 6. Launch *Dnevnici* from Lutris.
 #### Wine Configuration
 - This script uses the lutris-7.2-2-x86_64 wine version
-- The script is also compatible with the latest stable/staging versions. 
+- The script is also compatible with the latest stable/staging wine versions. 
 - You can change the wine version in Lutris, if needed.
