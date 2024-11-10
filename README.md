@@ -26,7 +26,7 @@ git clone https://github.com/Naplifye/Dnevnici-po-ZDDS.git
 ```
 ## Problem 
 ```
-On older versions of Lutris, you may experience issues where the script cannot be installed because the required Wine version is either not found or mismatched with wine-ge-8-26
+On older versions of Lutris like 0.5.16, you may experience issues where the script cannot be installed because the required Wine version is either not found or mismatched with wine-ge-8-26
 ```
 ## Solution
 ```
